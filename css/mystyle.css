@@ -1,0 +1,301 @@
+html {
+    background: black;
+    overflow: hidden;
+}
+
+#game {
+    width: 1030px;
+    height: 720px;
+    background: url(../images/bg.png) no-repeat top/100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#myca {
+    position: absolute;
+    /* display: block; */
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.playerbust,
+.dealerbust,
+.playerwin,
+.dealerwin,
+.push,
+.another {
+    width: 379px;
+    height: 352px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.playerbust {
+    background: url(../images/playerbust.png) no-repeat bottom/100%;
+}
+
+.dealerbust {
+    background: url(../images/dealerbust.png) no-repeat bottom/100%;
+}
+
+.playerwin {
+    background: url(../images/playerwin.png) no-repeat bottom/100%;
+}
+
+.dealerwin {
+    background: url(../images/dearerwin.png) no-repeat bottom/100%;
+}
+
+.push {
+    background: url(../images/push.png) no-repeat bottom/100%;
+}
+
+.another {
+    /* display: block; */
+    height: 481px;
+    background: url(../images/runoutmoney.png) no-repeat bottom/71%;
+}
+
+.sum {
+    width: 171px;
+    height: 300px;
+    position: absolute;
+    top: 131px;
+    left: 230px;
+    text-align: center;
+    /* vertical-align: middle; */
+}
+
+.sum .housesum,
+.playersum {
+    background-color: #1579ab;
+    border: 2px solid #2da1db;
+    width: 65px;
+    height: 50px;
+    display: block;
+    color: #ffffff;
+    font-size: 32px;
+    padding-top: 18px;
+}
+
+.sum .playersum {
+    position: absolute;
+    top: 153px;
+}
+
+.topoperate {
+    width: 1030px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+}
+
+.topoperate .back,
+.music,
+.restart {
+    width: 50px;
+    height: 50px;
+    /* position: absolute; */
+}
+
+.topoperate .back {
+    background: url("../images/back.png") no-repeat center/100%;
+}
+
+.topoperate .music {
+    background: url("../images/mute_68x67.png") no-repeat 0 0/200%;
+}
+
+.topoperate .music2 {
+    background: url("../images/mute_68x67.png") no-repeat -49px 0/200%;
+}
+
+.topoperate .restart {
+    background: url("../images/restart.png") no-repeat 0 0/92%;
+}
+
+.canvas {
+    position: absolute;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    padding-top: 70px;
+    padding-left: 156px;
+    left: 0;
+    right: 0;
+    top: 12px;
+}
+
+.betmon {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 54%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.betmon span {
+    color: #ffffff;
+    background-color: #083c55;
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    left: -64px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.betmon p {
+    color: rgb(80, 113, 129);
+    /* font-size: 30px; */
+}
+
+#bottomoperate {
+    width: 1030px;
+    height: 110px;
+    position: absolute;
+    bottom: 134px;
+}
+
+#bottomoperate .deal,
+.double,
+.stand,
+.hit,
+.bet25,
+.bet100,
+.bet1000,
+.bet500 {
+    width: 103px;
+    height: 110px;
+    position: absolute;
+}
+
+#bottomoperate .deal {
+    background: url("../images/deal.png") no-repeat 0 0/95%;
+    /* margin-left: 120px;  */
+}
+
+#bottomoperate .double {
+    background: url("../images/buttons.png") no-repeat -106px 0/200%;
+    /* margin-left: 30px; */
+}
+
+#bottomoperate .stand {
+    background: url("../images/buttons.png") no-repeat -106px -106px/200%;
+    margin-left: 120px;
+}
+
+#bottomoperate .hit {
+    background: url("../images/buttons.png") no-repeat 0 -106px/200%;
+    margin-left: 240px;
+}
+#bottomoperate .deal:hover,
+.double:hover,
+.stand:hover,
+.hit:hover,
+.bet25:hover,
+.bet100:hover,
+.bet1000:hover,
+.bet500:hover{
+transform: translate(-5px,-10px);
+/* box-shadow: 10px 5px 5px black; */
+}
+#bottomoperate .bank {
+    position: absolute;
+    bottom: 3px;
+    left: 39%;
+    color: white;
+    text-align: center;
+}
+
+#bottomoperate .bank span {
+    /* vertical-align: middle; */
+    display: inline-block;
+    position: absolute;
+    /* text-align: center; */
+    bottom: 36px;
+    left: 113px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#bottomoperate .bet {
+    width: 615px;
+    height: 120px;
+    /* position: absolute; */
+}
+
+#bottomoperate .bet25 {
+    background: url("../images/chips_133x133.png") no-repeat -206px 5px/298%;
+    margin-left: 596px;
+}
+
+#bottomoperate .bet100 {
+    background: url("../images/chips_133x133.png") no-repeat 0px -99px/298%;
+    margin-left: 696px;
+}
+
+#bottomoperate .bet500 {
+    background: url("../images/chips_133x133.png") no-repeat -101px -100px/298%;
+    margin-left: 793px;
+}
+
+#bottomoperate .bet1000 {
+    background: url("../images/chips_133x133.png") no-repeat -201px -100px/298%;
+    margin-left: 892px;
+}
+
+.start {
+    width: 1030px;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: linear-gradient(to right, #200122, #6f0000);
+}
+
+.start .logo {
+    width: 894px;
+    height: 260px;
+    margin: 0 auto;
+    background: url("../images/gameTitle.png") no-repeat center/100%;
+}
+
+.start .play {
+    width: 204px;
+    height: 97px;
+    margin: 0 auto;
+    display: block;
+    background: url("../images/playBut.png") no-repeat center/100%;
+    animation-name: play;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes play {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

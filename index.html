@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>黑桃J（21点游戏）</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.easyaudioeffects.1.0.0.min.js"></script>
+    <script src="lib/easeljs-0.7.1.min.js"></script>
+    <script src="lib/tweenjs-0.5.1.min.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body onLoad="init();">
+    <!-- 游戏闯关结束提示音 -->
+    <audio src="audios/tishi.mp3" id="tishi"></audio>
+    <!-- 背景音乐 -->
+    <audio src="audios/bg.mp3" id="bg" loop></audio>
+
+    <!-- 整个游戏界面 -->
+    <div id="game">
+        <!-- 顶部操作栏 -->
+        <div class="topoperate clearfix">
+            <a class="back right" title="退出游戏"></a>
+            <a class="music right " title="音效" data-sound="noise"></a>
+            <a class="restart right" title="重新开始" onclick="restart()"></a>
+        </div>
+        <!-- 计分模块 -->
+        <div class="sum">
+            <span class="housesum">0</span>
+            <span class="playersum">0</span>
+        </div>
+        <!-- 牌canvas -->
+        <div class="canvas">
+            <canvas id="canvas" width="300" height="300">
+                你的浏览器不支持canvas画布
+            </canvas>
+        </div>
+        <!--  bet赌注-->
+        <div class="betmon">
+            <p>BET</p>
+            <span id="betmoney">0</span>
+        </div>
+        <!-- 底部操作栏 -->
+        <div id="bottomoperate">
+            <a class="deal" title="发牌" onclick="newgame()"></a>
+            <!-- 牌的操作 -->
+            <div class="pukeaction">
+                <a class="double" title="双倍赌注" onclick="doublebet()"></a>
+                <a class="stand" title="停牌" onclick="playerdone()"></a>
+                <a class="hit" title="要牌" onclick="deal()"></a>
+            </div>
+
+            <!-- 银行 -->
+            <div class="bank">
+                <img src="images/bank.png">
+                <span id="bankmoney">1000</span>
+            </div>
+            <!-- 赌注分类 -->
+            <div class="bet">
+                <a class="bet25"></a>
+                <a class="bet100"></a>
+                <a class="bet500"></a>
+                <a class="bet1000"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 提示界面 -->
+    <a onclick="restart2()">
+        <!--player胀死界面  -->
+        <div class="playerbust"></div>
+        <!--dealer胀死界面  -->
+        <div class="dealerbust"></div>
+        <!--playerwins  -->
+        <div class="playerwin"></div>
+        <!-- dealerwins -->
+        <div class="dealerwin"></div>
+        <!-- push -->
+        <div class="push"></div>
+        <!-- 再来额外1000 -->
+        <div class="another"></div>
+    </a>
+    <!-- 开始界面 -->
+    <div class="start">
+        <div class="logo"></div>
+        <a class="play"></a>
+    </div>
+    <!-- 加载进度条 -->
+    <canvas id="myca" width="1030" height="720" style="background-color: #374252;">
+    </canvas>
+</body>
+<script src="js/my.js"></script>
+<script src="js/proload.js"></script>
+
+</html>
