@@ -36,6 +36,6 @@ function startLoad() {
         .to({
             // x轴缩放为1，填满
             scaleX: 1
-        }, 1000);
+        }, 100 q0);
 
 }

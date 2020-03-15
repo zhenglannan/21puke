@@ -97,10 +97,10 @@ function init() {
     puke.builddeck(); //构造一副牌
     puke.shuffle(); //洗牌
     stage = new createjs.Stage("myca");
-     buildLoaderBar(); //创建加载条
-     startLoad(); //用定时器累加加载条长度
-     createjs.Ticker.setFPS(60);
-     createjs.Ticker.addEventListener("tick", stage);
+    buildLoaderBar(); //创建加载条
+    startLoad(); //用定时器累加加载条长度
+    createjs.Ticker.setFPS(60);
+    createjs.Ticker.addEventListener("tick", stage);
     // canvas1 = document.getElementById('canvas');
     // window.addEventListener('keydown', getkey, false);
     // console.log(1);
@@ -110,7 +110,7 @@ function init() {
 setTimeout(function () {
     $("#myca").fadeOut();
     $("#bg")[0].play();
-  }, 1500)
+}, 1500)
 // Deal
 function newgame() { //开始新游戏
     ctx.clearRect(0, 0, cwidth, cheight); //清屏
@@ -268,9 +268,9 @@ function playerdone() { //玩家按了键，不要牌了。
 // 跳出补充钱的提示
 function anothermon() {
     $(".another").fadeIn();
-    bankmoney=1000;
+    bankmoney = 1000;
     $("#bankmoney").html(bankmoney);
-    
+
 }
 //showhouse()显示庄家手中所有的牌。
 function showhouse() {
@@ -302,8 +302,8 @@ function restart() {
     // 出牌显示
     $(".deal").show();
     // bank重置
-    bankmoney=1000;
-    betmoney=0;
+    bankmoney = 1000;
+    betmoney = 0;
     $("#bankmoney").html(bankmoney);
     $("#betmoney").html(betmoney);
 

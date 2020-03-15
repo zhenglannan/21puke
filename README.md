@@ -12,3 +12,6 @@ Vscode+chrome
 ## 游戏处理流程
 
 ![未命名文件 (2).png](https://cdn.nlark.com/yuque/0/2020/png/262951/1581593411163-29cf6159-7378-4fe2-bf55-f4484a4c6e44.png#align=left&display=inline&height=880&name=%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%20%282%29.png&originHeight=880&originWidth=203&size=28468&status=done&style=none&width=203)
+
+
+[**转载请注明出处**]
